@@ -1,0 +1,17 @@
+export { default as Digest } from "./Digest/Digest";
+export { default as AppPage } from "./AppPage/AppPage";
+export { default as BlogsPage } from "./BlogsPage/BlogsPage";
+export { default as CommunityPage } from "./CommunityPage/CommunityPage";
+export { default as LandingPage } from "./LandingPage/LandingPage";
+export { default as Team } from "./Team/Team";
+export { default as TeamProfile } from "./TeamProfile/TeamProfile";
+export { default as FourNotFour } from "./Miscellaneous/FourNotFour/FourNotFour";
+export { default as Privacy } from "./Miscellaneous/Privacy/Privacy";
+export { default as Terms } from "./Miscellaneous/Terms/Terms";
+export { default as Contact } from "./Miscellaneous/Contact/Contact";
+export { default as About } from "./Miscellaneous/About/About";
+export { default as Copyright } from "./Miscellaneous/Copyright/Copyright";
+export { default as Cancellation } from "./Miscellaneous/Cancellation/Cancellation";
+export { default as Faq } from "./Miscellaneous/Faq/Faq";
+export { default as Referral } from "./Miscellaneous/Referral/Referral";
+export { default as IndiclawWelcome } from "./IndiclawWelcome/IndiclawWelcome";

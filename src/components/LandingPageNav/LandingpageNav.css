@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+.lp_Navbar {
+  background-color: #6a6db4 !important;
+  padding: 0.6em 2em;
+  display: flex;
+  box-shadow: 0 12px 24px rgba(47, 49, 93, 0.2);
+  position: relative;
+}
+.selected {
+  border-bottom: 2px solid white;
+}
+.lp_nav-left {
+  display: flex;
+  flex: 0.23;
+}
+.lp_nav-center {
+  display: flex;
+  flex: 0.77;
+  justify-content: flex-end !important;
+}
+.lp_nav-right {
+  display: flex;
+  flex: 0;
+  justify-content: flex-end !important;
+}
+.lp_nav-left > button {
+  display: none;
+}
+.lp_nav-center > a {
+  margin: auto 1em !important;
+  padding: 8px 0;
+}
+.lp_nav-center > a > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+}
+.lp_nav-right > .signinLogin > button {
+  margin-top: 3px !important;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.lp_nav-right > .signinLogin > #joinus {
+  display: inline-block !important;
+  margin-left: 2em;
+  padding: 7px 25px;
+  border-radius: 25px;
+  border: 2px solid white;
+}
+.lp_nav-right > .signinLogin > #lp_nav_loginbtn {
+  display: inline-block !important;
+}
+.lp_nav-right > .signinLogin > #loginbtn {
+  display: none !important;
+}
+.navRightMobile {
+  display: none;
+}
+.lp_nav_brandName {
+  display: flex;
+  margin: auto;
+  height: 3em !important;
+}
+.searchbar {
+  display: flex;
+  width: 285px;
+  height: 40px;
+  background: rgba(196, 196, 196, 0.33);
+  border-radius: 62px;
+  margin: auto;
+}
+
+.searchicon {
+  margin: auto;
+  margin-right: 6%;
+}
+
+.nav-inputbase {
+  margin: auto;
+  margin-left: 10%;
+  width: 70%;
+}
+
+.drawer-divider {
+  background-color: white !important;
+  opacity: 0.2;
+  margin: 5px 0 5px 0 !important;
+}
+.closebtn-icon {
+  margin: 10px 0 20px -8px !important;
+}
+.div-closebtn :hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.MuiIconButton-root,
+.MuiIconButton-root:hover,
+.MuiIconButton-root:focus,
+.MuiIconButton-root:active {
+  outline: none !important;
+  border: none !important;
+}
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 800px) and (max-width: 1090px) {
+  .lp_Navbar {
+    padding: 0.6em 1.3em;
+  }
+  .lp_nav-left {
+    flex: 0.2;
+  }
+  .lp_nav_brandName {
+    height: 2.5em !important;
+    margin-top: 2px;
+  }
+  .lp_nav-center {
+    flex: 0.8;
+  }
+  .lp_nav-center > a {
+    margin: auto 10px !important;
+  }
+  .lp_nav-center > a > p {
+    font-size: 12px;
+  }
+  .lp_nav-right > .signinLogin > button {
+    font-size: 12px;
+    margin-top: 1px !important;
+  }
+  .lp_nav-right > .signinLogin > #joinus {
+    padding: 8px 10px;
+    margin-left: 0.5em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .lp_Navbar {
+    padding: 0.5em 0.6em;
+  }
+  .lp_nav-left {
+    flex: 0.2;
+  }
+  .lp_nav-left > button {
+    display: inline;
+  }
+  .lp_nav_brandName {
+    height: 2.2em !important;
+    margin-top: 5px;
+    margin-left: 1em;
+  }
+  .lp_menu {
+    height: 0.8em;
+    margin-left: -0.5em !important;
+  }
+  .lp_nav-center {
+    display: none;
+  }
+  .lp_nav-right > .signinLogin > #lp_nav_loginbtn {
+    display: none !important;
+  }
+  .lp_nav-right {
+    flex: 0.8;
+  }
+  .lp_nav-right > .signinLogin > button {
+    margin-top: 8px;
+    font-size: 10px;
+    letter-spacing: 1px;
+  }
+  .lp_nav-right > .signinLogin > #joinus {
+    height: 30px;
+    padding: 0 15px;
+    margin-top: 5px !important;
+  }
+  .navRightMobile {
+    display: flex;
+    margin-left: auto;
+  }
+  .searchbar-mobile {
+    display: flex;
+  }
+  .nav-inputbase-mobile {
+    display: none !important;
+  }
+  .moreIcon {
+    margin: auto !important;
+    height: 40px !important;
+    width: 40px !important;
+  }
+  .moreiconbtn {
+    height: 30px !important;
+    width: 30px !important;
+  }
+  .menuItem {
+    padding: 0 1em !important;
+  }
+}

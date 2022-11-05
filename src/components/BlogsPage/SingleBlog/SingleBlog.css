@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.singleBlogPage{
+    padding: 2em 0;
+    background-color: #f7f7fb;
+    font-family: Roboto;
+}
+.un_image>img{
+    height:10em;
+}
+.blogBody>img{
+    width: 100%;
+    margin: 2em 0;
+}

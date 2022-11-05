@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.drawerListitem{
+    padding-left: 0 !important;
+}
+.drawerListitem :hover{
+    cursor: pointer;
+    color: white;
+    opacity: 0.9;
+}
+.drawerLinks {
+    color: white !important;
+}
+#menuMobileView{
+    display: none;
+}
+.drawerLinksDigest {
+    color: white !important;
+}
+.drawerListitemDigest {
+    padding-left: 1rem !important;
+}
+
+.nav_digest_categories {
+    padding: 1rem !important;
+    margin: 1rem !important;
+    background: #9193C7 !important;
+    box-shadow: inset 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.Navbar{
+    background-color: #6A6DB4 !important;
+    box-shadow: 0px 12px 24px rgba(47, 49, 93, 0.2) !important;
+    padding: 0.6em 2em;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+.nav-left{
+    display: flex;
+}
+.nav-right{
+    display: flex;
+    margin-left: auto !important;
+}
+.navRightMobile {
+    display: none;
+}
+.brandName {
+    height:3.1em;
+    display: flex;
+    margin: auto;
+    margin-left: 1em !important;
+}
+.nav-left>#navLeftLink{
+    margin: auto 10px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-bottom: 2px;
+}
+.MuiMenu-paper{
+    background-color: #7F81BA !important;
+    box-shadow: 0px 15px 15px rgba(18, 18, 18, 0.19),0px 9px 20px rgba(18, 18, 18, 0.03) !important;
+    border-radius:8px !important;
+}
+#menuitem{
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: normal;
+    color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.searchbar{
+    display: flex;
+    width:285px;
+    height: 40px;
+    background: rgba(196, 196, 196, 0.33);
+    border-radius: 62px;
+}
+
+.searchicon{
+    margin: auto;
+    margin-right: 6%;
+}
+
+.nav-inputbase{
+    margin: auto;
+    margin-left: 10%;
+    width: 70%;
+}
+
+
+.drawer-divider{
+    background-color: white !important;
+    opacity: 0.2;
+    margin:5px 0 5px 0 !important;
+}
+.div-closebtn{
+    padding:1em 0 0 1.9em !important;
+}
+.div-closebtn :hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.closebtn-icon{
+    padding: 0 !important;
+    font-size:1.4em !important;
+}
+
+.MuiIconButton-root,
+.MuiIconButton-root:hover,
+.MuiIconButton-root:focus,
+.MuiIconButton-root:active {
+    outline: none !important;
+    border: none !important;
+}
+#joinus{
+    display: none !important;
+}
+#lp_nav_loginbtn{
+    display: none;
+}
+
+.drawer_component::-webkit-scrollbar {
+    display: none;
+}
+
+.drawer_component {
+    overflow-y: scroll !important;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    margin-bottom: 3rem;
+}
+  
+
+
+.drawer_bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.db_left{
+    flex:0.7;
+    display: flex;
+    background-color: #6F72B6;
+    padding: 0.5em;
+}
+.db_right{
+    flex:0.3;
+    display: flex;
+    background-color: #5E61AE;
+    padding: 0.5em;
+    justify-content: center;
+}
+.db_left>a{
+    font-size: 13px;
+    color:white;
+    margin: auto;
+}
+.db_divider{
+    font-size: 12px;
+    margin: auto 7px;
+}
+.db_socialmediaicon{
+    color: white;
+    font-size: 16px !important;
+    margin: auto 5px;
+}
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 960px)
+{
+    .Navbar{
+        padding: 0.6em 1.3em;
+    }
+    .brandName{
+        margin-left: 1em;
+    }
+    .menu{
+        height:1em;
+    }
+    .nav-right{
+        width:45%;
+    }
+    .navRightMobile {
+        display: none !important;
+    }
+    .searchicon{
+        margin-right: 10%;
+    }
+    #loginbtn{
+        font-size: 12px !important;
+        height: 40px;
+    }
+    #navLeftLink{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .Navbar{
+        padding: 0.5em 0.7em;
+    }
+    .nav-left{
+        margin-left: -11px;
+    }
+    .brandName{
+        height: 2.1em;
+        margin-top:5px;
+        margin-left: 0.4em !important;
+    }
+    #navLeftLink {
+        display: none !important;
+    }
+    .menu{
+        height:0.8em;
+    }
+    #menuMobileView {
+        display: inline-block !important;
+    }
+    #loginbtn{
+        margin: -8px 0 0 -1px !important;
+    }
+    .nav-right{
+        display: none;
+    }
+    .navRightMobile {
+        display: flex !important;
+        margin-left: auto;
+    }
+    .searchbar-mobile{
+        display: flex;
+    }
+    .nav-inputbase-mobile{
+        display: none !important;
+    }
+    .moreIcon{
+        margin: auto !important;
+        height: 40px !important;
+        width: 40px !important;
+    }
+    .moreiconbtn{
+        height: 30px !important;
+        width: 30px !important;
+    }
+    .menuItem{
+        padding: 0 1em !important;
+    }
+}

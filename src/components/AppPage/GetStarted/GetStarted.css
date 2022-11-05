@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.getstarted{
+    color: white;
+    background-color: #6A6DB4;
+    padding-bottom: 5rem;
+}
+
+.getstarted>h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.getstarted>h5 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.gs-Container {
+    padding: 4.5em 3em 0 3em;
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.gs-Container > a > button {
+    width: 350px;
+    height: 75px;
+    color: white !important;
+    font-family: Roboto !important;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: none !important;
+    border-radius: 42px !important;
+    outline: none !important;
+    border: none !important;
+    white-space: nowrap;
+}
+
+.icons {
+    font-size: 25px !important;
+    margin-right: 1rem;
+}
+
+.divider {
+    background-color: white !important;
+    opacity:0.46;
+    width:2px;
+    height:74%;
+    margin:auto;
+    position: relative;
+    top:13%;
+}
+
+
+a, a:hover, .MuiButton-label {
+    text-decoration: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .getstarted > .MuiGrid-container {
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box;
+    }
+    
+    .gs-Container {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center !important;
+    }
+    .gs-Container > a > button {
+        height: 75px;
+        margin-right: 0em;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .getstarted>h1 {
+        font-size: 60px;
+    }
+    
+    .getstarted>h5 {
+        font-size: 22px;
+    }
+    .gs-Container > a > button {
+        height: 75px;
+        margin-right: 0em;
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .getstarted>h1 {
+        font-size: 60px;
+    }
+    
+    .getstarted>h5 {
+        font-size: 22px;
+    }
+    .gs-Container > a > button {
+        width: 300px;
+        height: 75px;
+        margin-right: 0em;
+        margin: 1rem;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .getstarted>h1 {
+        font-size: 45px;
+    }
+    
+    .getstarted>h5 {
+        font-size: 20px;
+    }
+
+    .gs-Container > a > button {
+        width: 230px;
+        height: 75px;
+        margin-right: 0em;
+        margin: 1rem;
+        font-size: 13px
+    }
+}

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.Category {
+    padding: 3rem;
+    background-color: #6A6DB4;
+    font-family: Roboto;
+}
+
+.cat_container {
+    width: 75%;
+    background-color: #6A6DB4;
+}
+
+.cat_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.cat_header > h4 {
+    margin: auto !important;
+    width: 22em;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.cat_header > .line {
+    height: 1.1px;
+    width: 100%;
+    background-color:white;
+}
+
+
+.CategoryCard {
+    background: #7F81BA;    
+    box-shadow: 0px 4px 8px rgba(127, 57, 251, 0.04);
+    border-radius: 4px;
+    margin-bottom: 2em;
+    margin: 3em;
+}
+.CategoryCard:hover {
+    box-shadow: 0px 12px 37px rgba(65, 59, 74, 0.5);
+}
+.cat_card_content {
+    margin: auto !important;
+    padding: 2rem 2rem !important;
+}
+.cat_card_content > h6 {
+    font-weight: 500 !important;
+    font-size: 26px !important;
+    color: white;
+    margin-top: 0em !important;
+}
+.CategoryCard_header:hover{
+    color: white;
+    opacity: 0.7;
+}
+.CategoryCard_text {
+    padding: 0 !important;
+    font-size: 15px !important;
+    margin-top: 1em !important;
+    line-height: 23px !important;
+    color: white;
+}
+.read_mobile{
+    display: none;
+}
+.cardImg>a>img{
+    height: 15em;
+    width: 100%;
+    object-fit: cover;
+    border-radius:4px;
+}
+/* MEDIA QUERIES */
+
+
+/*tablet*/
+
+@media (min-width: 959px) and (max-width: 1070px) {
+    
+    .Category {
+        padding: 3rem;
+    }
+    .cat_container {
+        width: 80%;
+    }
+    .cat_header>.line {
+        margin-left: 1em !important;
+    }
+   .cat_card_content {
+       padding: 0.6em 2em !important;
+   }
+   .cat_header{
+       font-size: 25px !important;
+   }
+   .cat_text{
+       font-size: 16px !important;
+   }
+}
+
+/*mobile*/
+
+@media (min-width: 680px) and (max-width: 959px) {
+    .Category {
+        padding: 0;
+    }
+
+    .cat_container {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    .cat_header{
+        padding-top: 3em;
+    }  
+    .cat_header>h4 {
+        margin-left: 0 !important;
+        font-size: 23px !important;
+    }
+    .cat_header>.line {
+        margin-left: 1em !important;
+    }
+
+    .cat_card_content > a {
+        margin: 0 !important;
+    }
+    .cat_card_content {
+        margin: 0;
+        padding: 0;
+    }
+
+    .CategoryCard_header {
+        font-size: 20px !important;
+        padding-bottom: 0.2rem;
+        padding-top: 0.2rem;
+    }
+
+    .CategoryCard_header > h6 {
+        margin-top: 0;
+    }
+
+    .CategoryCard_text {
+        font-size: 14px !important;
+        padding: 1rem;
+        padding-top: 0;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .Category {
+        padding: 2.5em 1em !important;
+    }
+    .cat_container {
+        width: 100%;
+    }
+    .cat_header{
+        margin: 0em !important;
+    }
+    .cat_header > h4 {
+        width:120% !important;
+        margin-left: 0 !important;
+        font-size: 16px !important;
+    }
+    .cat_body{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .CategoryCard {
+        margin-bottom: 0 !important;
+        margin-top: 1.5em !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .cat_card_content {
+        padding: 1em 0.5em 0.5em 1em !important;
+    }
+    .cat_card_content>h6 {
+        font-size: 17px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .CategoryCard_text {
+        display: none;
+    }
+    .read_mobile{
+        display: inline;
+    }
+    .read_mobile>button{
+        margin-left: -8px !important;
+        margin-top: 7px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: capitalize;
+        color: white;
+    } 
+    .cardImg>a>img {
+        height: 8em;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,198 @@
+.community {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #6A6DB4;
+}
+
+
+.community_body {
+    display: flex;
+    justify-content: center;
+    padding: 0 4em;
+}
+
+.communityLeft {
+    padding-top: 10%;
+    flex: 0.55;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.communityLeft > h1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.communityLeft > p {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 160.69%;
+    color: #FFFFFF;
+    width: 80%;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.community_buttons {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.community_buttons > a > .get_started {
+    padding: 16px 36px;
+    width: 268px;
+    height: 61px;
+    margin-right: 3rem;
+    background: #4DB6AB;
+    box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.07);
+    border-radius: 43px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 161.19%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.community_buttons > a > .learn_more {
+    padding: 15px 35px;
+    width: 199px;
+    height: 59px;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+    margin-right: 2rem;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 161.19%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.community_buttons > .get_started:hover {
+    background: #4DB6AB;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .community {
+        height: 92vh;
+    }
+
+    .community_body {
+        margin: 2rem;
+    }
+    .communityLeft > h1 {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .communityLeft > p {
+        font-size: 19px;
+    }
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .community_body {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .communityLeft > h1 {
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 51px;
+    }
+    .communityLeft > p {
+        font-size: 18px;
+    }
+    .community_buttons {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .community_buttons > .get_started, .community_buttons > a > .learn_more {
+        white-space: nowrap;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .community_body {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .communityLeft {
+        flex: 1;
+    }
+    .communityLeft > h1 {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 107.69%;
+    }
+    .communityLeft > p {
+        font-size: 18px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .community_buttons {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .community_buttons > .get_started, .community_buttons > a > .learn_more {
+        white-space: nowrap;
+        margin-top: 1rem;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and 
+(-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    
+    .community_body {
+        padding: 2rem;
+    }
+    .community_buttons > a > .get_started {
+        width: 228px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    .community_buttons > a > .learn_more {
+        width: 179px;
+        height: 55px;
+    }
+    .communityLeft > h1 {
+        font-size: 30px;
+    }
+    .communityLeft > p {
+        font-size: 16px;
+    }
+}

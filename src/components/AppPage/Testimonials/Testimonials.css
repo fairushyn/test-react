@@ -1,0 +1,66 @@
+.testimonials {
+    z-index: 9999;
+    background: #E6E6F2;
+    padding:5em 5em 5em 5em;
+
+}
+.testimonials h1{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 50px;
+    text-align: center;
+    color: #26284C;
+}
+.landinpageCard {
+    min-width:346px;
+    min-height: 268px;
+    background-color: white;
+    border-radius: 16px;
+    padding:2em 2em 1em 2em;
+    margin: 6em 2em 0 0;
+}
+.img img{
+    height:4.5em;
+    width:4.5em;
+    border-radius: 20px;
+    margin-right: 1.3em;
+}
+.header{
+    display: flex;
+}
+.headingtext {
+    margin:auto;
+    font-family: Roboto;
+    font-style: normal;
+    color: #26284C;
+}
+.headingtext h5{   
+    font-weight: 500;
+    font-size: 20px;
+}
+.headingtext h6{
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -5px;
+}
+.cardBody{
+    margin-top: 1.5em;
+    color: #26284C;
+    opacity: 0.64;
+    line-height: 21px;
+}
+
+.t_container {
+    display: flex;
+    overflow: auto;
+}
+
+.t_container::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.t_container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}

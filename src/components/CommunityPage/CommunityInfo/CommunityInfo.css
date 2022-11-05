@@ -1,0 +1,152 @@
+.communityInfo {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+}
+
+.ciOne, .ciTwo {
+    display: flex;
+    margin: 3rem;
+    margin-top: 1rem;
+}
+
+.ciOne {
+    margin-top: 4rem;
+}
+
+.ci_oneLeft, .ci_oneRight, .ci_twoLeft, .ci_twoRight {
+    position: relative;
+    flex: 0.5;
+    margin: 2rem;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex > img {
+    width: 370px;
+    height: 100%;
+}
+
+
+.ci_info_title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 115.69%;
+    letter-spacing: -0.005em;
+    color: #26284C;
+} 
+
+.ci_info_body {
+    margin-top: 1.5rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 169.69%;
+    color: #26284C;
+    position: relative;
+}
+
+.bold_title {
+    font-weight: bold;
+}
+
+hr {
+    margin-bottom: 3rem;
+    height: 1px;
+    opacity: 0.39;
+    border: 1px solid #26284C;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .infoOne, .infoTwo, .infoThree {
+        margin: 2rem;
+        margin-top: 9rem;
+    }
+
+    .ci_oneRight, .ci_oneLeft, .ci_twoLeft, .ci_twoRight {
+        margin: 0.5rem;
+    }
+
+    .ci_info_title {
+        font-size: 39px;
+    } 
+
+    .ci_info_body {
+        margin-top: 1.5rem;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .communityInfo {
+        margin: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .ciOne, .ciTwo {
+        margin: 1rem;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .ci_oneRight, .ci_oneLeft, .ci_twoLeft, .ci_twoRight  {
+        margin: 0.5rem;
+    }
+
+    .ci_info_title {
+        font-size: 30px;
+    } 
+
+    .ci_info_body {
+        margin-top: 1.5rem;
+        font-size: 16px;
+    }
+
+    .d-flex > img {
+        width: 320px;
+        height: 100%;
+    }
+
+    .col-rev {
+        flex-direction: column-reverse !important;
+    }
+
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and 
+(-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .communityInfo {
+        margin: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+}

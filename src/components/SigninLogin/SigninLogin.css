@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.dialog_body {
+    height: 130%;
+    background-color: #6A6DB4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+}
+
+#loginbtn{
+    width: 117px;
+    height: 40px;
+    margin-top: 5px !important;
+    margin-left: 1em !important;
+    box-shadow: none !important;
+    background: #00C4B4 !important;
+    border-radius: 54px !important;
+    color: white !important;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none !important;
+    border: none !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+    color: #26284C !important;
+}
+.PrivateTabIndicator-colorSecondary-7 {
+    background-color: #26284C !important;
+}
+.PrivateTabIndicator-colorSecondary-17 {
+    background-color: #26284C !important;
+}
+
+.MuiAppBar-colorDefault {
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+.tabContainer {
+    background: #FFFFFF;
+    box-shadow: 0px 12px 18px rgba(127, 57, 251, 0.08);
+    border-radius: 8px 8px 0px 0px !important;
+    width: 500px;
+}
+
+
+.loginTab, .signinTab {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.social_login {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social_login > button {
+    width: 150px;
+    height: 44px;
+    background: #FFFFFF;   
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+}
+
+.social_img {
+    margin-right: 1rem;
+    width: 18px;
+}
+
+.login_input, .signin_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MuiOutlinedInput-root {
+    margin-top: 0.8rem;
+    width: 400px;
+    height: 50px;
+}
+
+.loginTab > h6 {
+    text-align: right;
+    margin-top: 0.8rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120.19%;
+    color: #5A5EBB;
+}
+
+.loginTab > button, .loginTab > button:hover {
+    float: right;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    padding: 16px 72px;
+    color: white;
+    width: 233.85px;
+    height: 54px;
+    background: #5A5EBB;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+
+input, select, textarea {
+    color: black !important;
+}
+
+input:active:focus, select:active:focus, textarea:active:focus {
+    opacity: 0 !important;
+}
+
+::placeholder {
+    color: gray;
+    opacity: 1; 
+ }
+  
+  :-ms-input-placeholder { 
+    color: gray;
+  }
+  
+  ::-ms-input-placeholder {
+    color: gray;
+  }
+
+
+
+.MuiSelect-select {
+    cursor: pointer;
+    width: 380px !important;
+    border-radius: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.signinTab > button, .signinTab > button:hover {
+    margin: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 16px 22px;
+    color: white;
+    width: 233.85px;
+    height: 54px;
+    background: #5A5EBB;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+
+.signinTab > h5 {
+    text-align: center;
+    margin-top: 0.8rem;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120.19%;
+    color: #5A5EBB;
+}
+
+.signinTab > h5 > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.Otpverification{
+    text-align: center;
+    padding: 2em 1em;
+    font-family: 'Roboto';
+    color:#26284c;
+}
+.otp_container{
+    margin: 0 auto !important;
+}
+.otp_container>img{
+    height: 8em;
+    margin-bottom: 1em;
+}
+.otp_container>h1{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.otp_container>p{
+    margin: 1em 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+.otp_container>button{
+    width: 10em;
+    margin: 1em 0;
+    background-color: #6a6db4 !important;
+    color: white;
+}
+.otp_container>span{
+    margin: 1em 0;
+    float: center;
+    text-decoration: underline;
+}
+.Alert{
+    background-color: red;
+    width:40%;
+    margin:auto !important;
+}
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .MuiOutlinedInput-root {
+        width: 400px;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .MuiOutlinedInput-root {
+        width: 350px;
+        height: 45px;
+    }
+    .tabContainer {
+        width: 500px;
+    }
+    .loginTab > button, .loginTab > button:hover {
+        margin: 2rem;
+        padding: 16px 22px;
+        width: 210px;
+        height: 54px;
+    }
+    .signinTab > button, .signinTab > button:hover {
+        margin: 2rem;
+        padding: 16px 22px;
+        width: 210px;
+        height: 54px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .tabContainer {
+        width: 400px;
+    }
+    .MuiOutlinedInput-root {
+        width: 300px;
+        height: 45px;
+    }
+    .loginTab > button, .loginTab > button:hover {
+        margin: 2rem;
+        padding: 16px 72px;
+        width: 210px;
+        height: 54px;
+    }
+    .signinTab > button, .signinTab > button:hover {
+        margin: 2rem;
+        padding: 16px 22px;
+        width: 210px;
+        height: 54px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tabContainer {
+        width: 350px;
+    }
+    .MuiOutlinedInput-root {
+        width: 300px;
+        height: 45px;
+    }
+    .loginTab > button, .loginTab > button:hover {
+        margin: 2rem;
+        padding: 11px 52px;
+        width: 190px;
+        height: 50px;
+    }
+    .signinTab > button, .signinTab > button:hover {
+        margin: 2rem;
+        padding: 16px 22px;
+        width: 210px;
+        height: 54px;
+    }
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .tabContainer {
+        width: 290px;
+    }
+    .MuiOutlinedInput-root {
+        width: 250px;
+        height: 45px;
+    }
+    .loginTab > button, .loginTab > button:hover {
+        margin: 2rem;
+        padding: 11px 22px;
+        width: 170px;
+        height: 45px;
+    }
+    .signinTab > button, .signinTab > button:hover {
+        margin: 2rem;
+        padding: 11px 2px;
+        width: 200px;
+        height: 45px;
+    }
+  }

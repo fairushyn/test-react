@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.comm_getstarted{
+    color: white;
+    background-color: #6A6DB4;
+    padding-bottom: 5rem;
+}
+
+.comm_getstarted>h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.comm_getstarted>h5 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.cgs-Container {
+    padding: 4.5em 3em 0 3em;
+    display: flex;
+    justify-content: space-evenly !important;
+}
+
+.cgs-Container > button {
+    width: 30%;
+    height: 75px;
+    color: white !important;
+    font-family: Roboto !important;
+    font-weight: 400;
+    font-size: 16px;
+    box-shadow: none !important;
+    border-radius: 55px !important;
+    outline: none !important;
+    border: none !important;
+    white-space: nowrap;
+}
+.icons {
+    font-size: 25px !important;
+    margin-right: 1rem;
+}
+
+.divider {
+    background-color: white !important;
+    opacity:0.46;
+    width:2px;
+    height:74%;
+    margin:auto;
+    position: relative;
+    top:13%;
+}
+
+
+a, a:hover, .MuiButton-label {
+    text-decoration: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+
+}
+
+
+
+@media screen and (max-width: 992px) {
+    
+    .cgs-Container > button {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .comm_getstarted>h1 {
+        font-size: 50px;
+    }
+    .comm_getstarted>h5 {
+        font-size: 22px;
+    }
+    .cgs-Container > button {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .comm_getstarted{
+        padding-bottom: 2.5em;
+    }
+    .comm_getstarted>h1 {
+        font-size: 28px;
+    }
+    
+    .comm_getstarted>h5 {
+        font-size: 18px;
+        padding-top: 0.6em;
+    }
+    .cgs-Container{
+        padding: 2em 1em 0 1em;
+    }
+    .cgs-Container > button {
+        width: 230px;
+        height: 55px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 
+  480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    .comm_getstarted>h1 {
+        font-size: 45px;
+    }
+    
+    .comm_getstarted>h5 {
+        font-size: 20px;
+    }
+    .cgs-Container {
+        background-color: red !important;
+    }
+    .cgs-Container > button {
+        width: 230px;
+        height: 75px;
+        font-size: 13px
+    }
+}

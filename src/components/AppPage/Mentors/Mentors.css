@@ -1,0 +1,163 @@
+.mentor-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #e6e6f2;
+  font-family: roboto;
+  position: relative;
+  padding: 50px 10%;
+  margin: 0 0 20px 0;
+}
+
+.mentor-image-container {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 10px white solid;
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.48));
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.mentor-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mentor-images {
+  width: 480px;
+  height: 300px;
+}
+
+.mentor-left-image {
+  transform: translateY(60px) translateX(-90px) translateX(90px);
+}
+
+.mentor-center-image {
+  height: 300px;
+  width: 300px;
+  transform: translateX(90px);
+  z-index: 2;
+}
+
+.mentor-right-image {
+  transform: translateX(210px) translateY(65px) translateX(90px);
+}
+
+.mentor-right-image img {
+  filter: blur(1px) brightness(70%);
+}
+.mentor-left-image img {
+  filter: blur(1px) brightness(70%);
+}
+
+.mentor-swiper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 15px;
+}
+
+.mentor-swipe-button {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  background-color: #7f81ba;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+}
+
+.mentor-swipe-button:hover {
+  background-color: #6668a8;
+}
+
+.mentor-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  direction: rtl;
+  justify-self: right;
+  width: 600px;
+}
+
+.mentor-description h2 {
+  font-size: 50px;
+}
+
+.mentor-name {
+  font-size: 27px;
+}
+
+.mentor-role {
+  font-style: italic;
+  letter-spacing: -0.005em;
+}
+
+.mentor-bio {
+  max-width: 50ch;
+  line-height: 149.69%;
+  color: #1e1f3b;
+}
+
+.mobile-mentor-heading {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .mentor-container {
+    flex-direction: column;
+  }
+
+  .mentor-description {
+    direction: ltr;
+    text-align: center;
+  }
+
+  .mentor-bio {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .mentor-images {
+    width: 260px;
+    height: 200px;
+  }
+
+  .mentor-image-container {
+    height: 130px;
+    width: 130px;
+    border: 6px white solid;
+  }
+
+  .mentor-center-image {
+    height: 200px;
+    width: 200px;
+    transform: translateX(30px);
+  }
+
+  .mentor-right-image {
+    transform: translateX(105px) translateY(35px) translateX(30px);
+  }
+
+  .mentor-left-image {
+    transform: translateX(-35px) translateY(35px) translateX(30px);
+  }
+
+  .mentor-description {
+    width: auto;
+  }
+
+  .mentor-description h2 {
+    display: none;
+  }
+
+  .mobile-mentor-heading {
+    display: block;
+    font-size: 45px;
+    font-weight: bolder;
+  }
+}

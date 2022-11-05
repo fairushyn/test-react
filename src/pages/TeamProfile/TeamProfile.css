@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.teamProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamProfile_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6A6DB4;
+    height: 200px;
+    width: 100%;
+}
+
+.tp_info_back {
+    margin-top: 2rem;
+    position: absolute;
+    top: 19%;
+    left: 13%;
+}
+
+.tp_back_icon {
+    font-size: 3rem;
+    color: white;
+}
+
+.tp_info {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.tp_info_Left {
+    padding: 1rem;
+}
+
+
+.tp_info_Left > img {
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border-radius: 26px;
+    background-color:#6A6DB4;
+    box-shadow: 0px 4px 8px rgba(18, 18, 18, 0.26),0px 1px 16px rgba(18, 18, 18, 0.02);
+}
+
+.tp_info_Right {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.tp_info_Right > h2, .tp_info_Left > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 107.69%;
+    color: #FFFFFF;
+}
+
+.tp_info_Right > h6, .tp_info_Left > h6 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    margin-top: 0.4rem;
+}
+
+.tp_info_Right > .tp_icon_container {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.tp_icons {
+    color: #2F315D;
+    font-size: 1.8rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+.teamProfile_body {
+    padding: 5rem;
+    box-shadow: 0px 12px 24px rgba(127, 57, 251, 0.15);
+    border-radius: 4px;
+    margin: 7rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.teamProfile_body > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    color: #1E1F3B;
+}
+
+.teamProfile_desc {
+    padding: 2rem 5rem 2rem;
+    box-shadow: 0px 12px 24px rgba(127, 57, 251, 0.15);
+    border-radius: 4px;
+    margin: 7rem;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+}
+
+.teamProfile_desc > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 170%;
+    color: #1E1F3B;
+}
+
+.tp_info_Left > h2, .tp_info_Left > h6 {
+    display: none;
+}
+
+/* MEDIA QUERIES */
+
+
+/*tablet*/
+
+@media (min-width: 859px) and (max-width: 1070px) {
+   
+    .teamProfile_header {
+        height: 200px;
+        width: 100%;
+    }
+}
+ 
+ /*mobile*/
+ 
+ @media screen and (max-width: 859px) {
+    .teamProfile_header {
+        height: 260px;
+        width: 100%;
+    }
+
+    .tp_info_back {
+        margin-top: 0.5rem;
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        z-index: 899;
+    }
+    
+    .tp_back_icon {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .tp_info {
+        top: 11%;
+        margin: auto;
+        position: absolute;
+        left: 6%; 
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        padding: 1rem;
+    }
+
+    .tp_info_Left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .tp_info_Left > img {
+        width: 164px;
+        height: 164px;
+        border-radius: 26px;
+        margin-top: 2rem;
+    }
+
+    .tp_info_Left > h2, .tp_info_Left > h6 {
+        display: block;
+    }
+    .tp_info_Left > h2 {
+        font-size: 32px;
+        line-height: 107.69%;
+        width: 100%;
+    }
+    .tp_info_Left > h6 {
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: -0.005em;
+        width: 100%;
+    }
+    .tp_info_Right > h2, .tp_info_Right > h6 {
+        display: none;
+    }
+
+    .tp_info_Right > .tp_icon_container {
+        margin-top: 0;
+    }
+
+    .tp_info_Right {
+        padding: 0;
+    }
+    
+    .teamProfile_body {
+        padding: 1rem;
+        margin: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 3rem;
+    }
+    .teamProfile_body>p, .teamProfile_desc>p{
+        font-size: 16px;
+    }
+    .teamProfile_desc {
+        padding: 1rem;
+        margin: 2rem;
+        margin-top: 11rem;
+        margin-bottom: 2rem;
+    }
+
+}
+ 
+ @media screen and (max-width:680px) {
+
+
+}

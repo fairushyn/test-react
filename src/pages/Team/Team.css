@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6A6DB4;
+    height: 240px;
+    width: 100%;
+}
+
+.team_header > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 107.69%;   
+    text-align: center;    
+    color: #FFFFFF;
+    padding: 3rem;
+    white-space: nowrap;
+}
+
+.team_body {
+    display: flex;
+    flex-direction: column;
+}
+
+.team_content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F7F7FB;
+    height: 400px;
+}
+
+.teamBody_left {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 265px;
+    min-width: 265px;
+    height: 400px;
+    box-shadow: 5px 0px 9px rgba(0, 0, 0, 0.08);
+}
+
+.teamBody_left > h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    line-height: 135%;
+    color: #26284C;
+}
+
+.grey-bg {
+    background: #E6E6F2 !important;
+}
+
+.teamBody_right {
+    flex: 0.8;
+    display: flex;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    margin:0 2rem;
+    scroll-behavior: smooth;
+    transition: all 3s ease-in;
+}
+
+.teamBody_right::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+.teamCard {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(18, 18, 18, 0.06), 0px 1px 16px rgba(18, 18, 18, 0.02);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 25px 24px;
+    min-width: 225px;
+    max-width: 195px;
+    height: 280px;
+    margin: 3rem 1rem;
+}
+
+.teamCard>img {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background: #6A6DB4;
+    object-fit: cover;
+}
+
+.teamCard > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #1E1F3B;
+    margin-top: 0.9rem;
+}
+
+.teamCard > h6 {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: #1E1F3B;
+}
+
+.teamCard > p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 149.69%;
+    text-align: center;
+    color: #1E1F3B;
+    opacity: 0.8;
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+
+.teams_scroll_next {
+    position: absolute;
+    right: 40px;
+    padding: 0.65rem;
+    font-size: 2rem;
+    background: white;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.15), 0px 4px 13px rgba(0, 0, 0, 0.1);
+    opacity: 0.87;
+    cursor: pointer;
+    color: #26284C;
+    border-radius: 100%;
+}
+
+.teams_scroll_prev {
+    position: absolute;
+    left: 20%;
+    padding: 0.65rem;
+    font-size: 2rem;
+    background: white;
+    box-shadow: 0px 4px 43px rgba(0, 0, 0, 0.15), 0px 4px 13px rgba(0, 0, 0, 0.1);
+    opacity: 0.87;
+    cursor: pointer;
+    color: #26284C;
+    border-radius: 100%;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.teams_scroll_prev:hover, .teams_scroll_next:hover {
+    opacity: 1;
+}
+
+/* MEDIA QUERIES */
+
+
+/*tablet*/
+
+@media (min-width: 1070px) and (max-width: 1270px) {
+    .teams_scroll_prev {
+        left: 25%;
+    }
+}
+
+@media (min-width: 859px) and (max-width: 1070px) {
+    .team_header {
+        height: 230px;
+        width: 100%;
+    }
+    .team_content {
+        height: 370px;
+    }
+    
+    .teamBody_left {
+        max-width: 245px;
+        min-width: 245px;
+        height: 370px;
+    }
+
+    .teamCard {
+        min-width: 165px;
+        max-width: 165px;
+        height: 260px;
+        margin: 3rem;
+    }
+    .higher {
+        height: 270px !important;
+    }
+    .team_profile {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .teamCard > h2 {
+        font-size: 22px;
+        line-height: 120%;
+        margin-top: 0.7rem;
+    }
+    
+    .teamCard > h6 {
+        font-size: 14px;
+        line-height: 120%;
+    }
+    
+    .teamCard > p {
+        font-size: 13px;
+        line-height: 129.69%;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    .teams_scroll_prev {
+        position: absolute;
+        left: 30%;
+    }
+}
+ 
+
+
+@media screen and (max-width: 859px) {
+    .team_header {
+        height: 180px;
+        width: 100%;
+    }
+    .team_header > h2 {
+        font-size: 45px;
+        line-height: 107.69%;   
+        padding: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        white-space: nowrap;
+    }
+    .team_content {
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+        width: auto;
+    }
+
+    .teamBody_left {
+        max-width: none;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        box-shadow: none;
+        height: 70px;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .teamBody_left > h1 {
+        font-size: 38px;
+        line-height: 125%;
+        text-align: start;
+    }
+
+    .teamBody_right {
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        margin:0 2rem 0 0;
+    }
+
+    .teamCard {
+        min-width: 145px;
+        max-width: 145px;
+        height: 240px;
+        margin: 2rem;
+        margin-right: 1rem;
+        padding: 18px 20px 18px;
+    }
+    .higher {
+        height: 270px !important;
+    }
+    .team_profile {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .teamCard > h2 {
+        font-size: 19px;
+        line-height: 120%;
+        margin: 0.7rem -1rem 0.5rem -1rem;
+    }
+    
+    .teamCard > h6 {
+        font-size: 14px;
+        line-height: 120%;
+    }
+    
+    .teamCard > p {
+        font-size: 13px;
+        line-height: 129.69%;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+    }
+    .teams_scroll_next, .teams_scroll_prev {
+        display: none !important;
+    }
+}
+ 
+ @media screen and (max-width:680px) {
+    .team_header {
+        height: 160px;
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,118 @@
+.download-now-container {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6a6db4;
+  overflow: hidden;
+}
+
+.course-app-image-container {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.course-app-image-container img {
+  position: absolute;
+  transform: translateY(-40px);
+  max-width: 400px !important;
+}
+
+.details {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 63px */
+
+  /* white */
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.details p {
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 130.69%;
+  /* or 27px */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.details h2 {
+  font-size: 40px;
+  line-height: 130.69%;
+}
+
+.download-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.download-buttons a {
+  display: inherit;
+}
+
+@media screen and (max-width: 992px) {
+  .download-now-container {
+    flex-direction: column;
+    overflow: visible;
+    margin-top: 300px;
+  }
+
+  .course-app-image-container {
+    height: 350px;
+  }
+
+  .course-app-image-container img {
+    transform: translateY(-310px) translateX(40px);
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
+  .download-buttons img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.get_started {
+  width: 210px;
+  height: 50px;
+  background: #4db6ab;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  font-family: "Red Hat Display", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .download-buttons {
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+}

@@ -1,0 +1,153 @@
+.form-container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 100px 10% 0 10%;
+  font-family: Roboto;
+  font-style: normal;
+}
+
+.form-container h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 119.19%;
+  max-width: 20ch;
+  color: #26284c;
+  text-transform: capitalize;
+  margin: 25px;
+  direction: rtl;
+}
+
+.form-container .register-form {
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 61px 18px rgba(0, 0, 0, 0.11);
+  border-radius: 46px;
+  padding: 20px 0 22px 0;
+  text-align: center;
+  transform: translateY(-50px);
+}
+
+.register-form h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+  font-size: 27px;
+  border-bottom: 1px solid silver;
+  color: #26284c;
+}
+
+.register-form form {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.register-form .txt-field {
+  position: relative;
+  border: 1px solid #adadad;
+  border-radius: 11px;
+  margin: 25px 0;
+}
+
+.txt-field input,
+textarea,
+select {
+  width: 100%;
+  padding: 0 13px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt-field textarea {
+  font-family: Roboto;
+  margin: 0px;
+  padding: 14px 13px;
+  resize: none;
+}
+
+.txt-field label {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label,
+.txt-field textarea:focus ~ label,
+.txt-field textarea:valid ~ label,
+.txt-field select:focus ~ label,
+.txt-field select:valid ~ label {
+  color: transparent;
+}
+
+.register-form input[type="submit"] {
+  text-align: center;
+  width: 170px;
+  height: 37px;
+  left: 333px;
+  top: 1174px;
+  background: #6a6db4;
+  border-radius: 7px;
+  color: white !important;
+  border: none;
+  cursor: pointer;
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.coaches-img-container {
+  height: 45vh;
+}
+.coaches-img-container img {
+  height: 100%;
+}
+
+.register-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile-size-register-text {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .form-container .register-form {
+    width: 340px;
+    transform: translateY(0px);
+  }
+
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .mobile-size-register-text {
+    display: block;
+  }
+
+  .mobile-size-register-text h2 {
+    text-align: center;
+    font-size: 35px;
+    margin: 0 0 20px 0;
+  }
+
+  .normal-size-register-text {
+    display: none;
+  }
+}

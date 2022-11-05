@@ -1,0 +1,124 @@
+.features-grid {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  padding: 20px 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 32px rgba(105, 108, 179, 0.35);
+  border-radius: 38px;
+  width: 800px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.feature img {
+  height: 70px;
+}
+
+.feature p {
+  font-family: roboto;
+  display: inline;
+}
+
+@media screen and (max-width: 992px) {
+  .features-container {
+    max-width: 700px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .features-container {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features-container {
+    max-width: 260px;
+  }
+}
+
+/* courseApp */
+
+.download-now-container {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6e6f2;
+  overflow: hidden;
+}
+
+.course-app-image-container {
+  width: 400px;
+  height: 300px;
+  position: relative;
+}
+
+.course-app-image-container img {
+  position: absolute;
+  transform: translateY(-40px);
+  max-width: 400px !important;
+}
+
+.details {
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.details p {
+  font-size: 20px;
+  line-height: 130.69%;
+}
+
+.details h2 {
+  font-size: 40px;
+  line-height: 130.69%;
+}
+
+.download-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .download-now-container {
+    flex-direction: column;
+    overflow: visible;
+    margin-top: 300px;
+  }
+
+  .course-app-image-container {
+    height: 350px;
+  }
+
+  .course-app-image-container img {
+    transform: translateY(-310px) translateX(40px);
+  }
+
+  .details {
+    max-width: 100%;
+  }
+
+  .download-buttons img {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,193 @@
+.home {
+    background: #6A6DB4;
+}
+.home_body {
+    justify-content: center;
+    margin: 0 !important;
+    padding: 4em 4em 0 4em;
+}
+
+.bodyText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bodyText > h1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 50px !important;
+    line-height: 60px !important;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.bodyText > p {
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 160.69%;
+    color: #FFFFFF;
+    margin-top: 1rem;
+}
+
+.home_buttons {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.home_buttons > a > .get_started {
+    padding: 16px 36px;
+    width: 268px;
+    height: 61px;
+    margin-right: 3rem;
+    background: #4DB6AB;
+    box-shadow: 0px 4px 49px rgba(0, 0, 0, 0.07);
+    border-radius: 43px;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 161.19%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.home_buttons > a > .learn_more {
+    padding: 15px 35px;
+    width: 199px;
+    height: 59px;
+    border: 2px solid #FFFFFF;
+    border-radius: 56px;
+    margin-right: 2rem;
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 161.19%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    outline: none;
+}
+
+.home_buttons > a > .get_started:hover {
+    background: #4DB6AB;
+}
+
+.bodyImage > img {
+    display: block;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15em !important;
+    width: auto !important;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (min-width: 992px) and (max-width: 1380px) {
+    .home_body {
+        margin: 2rem;
+    }
+    .bodyText > h1 {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 54px;
+    }
+    .bodyText > p {
+        font-size: 17px;
+    }
+    .bodyImage > img {
+        margin-top: 3rem;
+        height: 15em !important;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .home_body {
+        padding: 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyText > h1 {
+        font-weight: 500;
+        font-size: 40px !important;
+        line-height: 51px !important;
+    }
+    .bodyText > p {
+        font-size: 16px !important;
+    }
+    .home_buttons {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home_buttons >  a > .get_started, .home_buttons > a > .learn_more {
+        white-space: nowrap;
+        margin-top: 1rem;
+    }
+    .bodyImage > img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .home_body {
+        padding: 2rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .bodyText {
+        flex: 1;
+        text-align: left;
+    }
+    .bodyText > h1 {
+        font-weight: 500;
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }
+    .bodyText > p {
+        font-size: 16px;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .home_buttons {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home_buttons > a > .get_started, .home_buttons > a > .learn_more {
+        white-space: nowrap;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+  }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and 
+(-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+    
+    .home_body {
+        padding: 2rem;
+    }
+    .home_buttons > a > .get_started {
+        width: 228px;
+        height: 57px;
+        font-size: 18px;
+    }
+
+    .home_buttons > a > .learn_more {
+        width: 179px;
+        height: 55px;
+    }
+    .bodyText > h1 {
+        font-size: 30px;
+    }
+    .bodyText > p {
+        font-size: 16px;
+    }
+}

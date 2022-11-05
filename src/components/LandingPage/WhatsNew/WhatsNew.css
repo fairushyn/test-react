@@ -1,0 +1,137 @@
+.whatsNew {
+    padding: 4rem;
+    background: #6A6DB4;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.whatsNew > h2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 161.19%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    padding: 1rem;
+}
+
+.wnCardContaner {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+
+.wnCardContaner::-webkit-scrollbar {
+    display: none;
+}
+
+
+.whatsNewCard {
+    margin: 1rem !important;
+    min-width: 375px !important;
+    min-height: 305px !important;
+    background: #8082BF;
+    box-shadow: 0px 8px 24px rgba(38, 40, 76, 0.16);
+    border-radius: 8px;
+}
+
+.whatsNewCardImg > img {
+    width: 100%;
+    height:12em;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.whatsNewCardBody {
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsNewCardBody > h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 134.69%;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    padding-right: 2rem;
+}
+.whatsNewCardBody>h6{
+    margin-top: 1em;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.whatsNewCardBody>.learnmore{
+    display: flex;
+    margin-top: 1.9em;
+}
+.whatsNewCardBody>.learnmore :hover{
+    cursor: pointer;
+}
+.whatsNewCardBody>.learnmore>p {
+    color: #FFFFFF !important;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.whatsNewCardBody>.learnmore>.arrow {
+    margin-left:4px;
+    font-size: 1rem !important;
+    color: #FFFFFF !important;
+    opacity: 0.9;
+}
+
+@media (min-width:600px) and (max-width: 960px)
+{
+    .whatsNew{
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .whatsNew {
+        padding: 1em 1em;
+    }
+    .whatsNew>h2 {
+        font-size: 24px;
+    }
+    .whatsNewCard {
+        margin:1rem 0.5rem !important;
+        min-width: 305px !important;
+    }
+    .whatsNewCardImg>img {
+        width: 305px;
+        height: 10em;
+    }
+    .whatsNewCardBody>h6{
+        font-size: 14px;
+    }
+    .whatsNewCardBody>.learnmore{
+        display: flex;
+        margin-top: 1.9em;
+    }
+    .whatsNewCardBody>.learnmore>p {
+        font-size: 13px;
+    }
+
+    .whatsNewCardBody>.learnmore>.arrow {
+        margin-left:4px;
+        font-size: 1rem !important;
+    }
+
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Lobster+Two&display=swap');
+
+.fourNotFour {
+    height: 90vh;
+    background-color: #6A6DB4;
+    background-image: url('../../../assets/svg/bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourNotFour > h1 {
+    font-size: 8rem;
+    color: #26284C;
+    font-family: 'Lobster Two', cursive;
+}
+
+.fourNotFour > h6 {
+    font-family: Roboto;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #26284C;
+}
+h5 {
+    color: #26284C; 
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+/* MEDIA QUERIES */
+
+/*small laptop*/
+@media (min-width: 992px) and (max-width: 1200px) {
+    .fourNotFour > h1 {
+        font-size: 7rem;
+    }
+    
+    .fourNotFour > h6 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+}
+
+/*mobile*/
+
+@media screen and (max-width: 992px) {
+    .fourNotFour > h1 {
+        font-size: 5rem;
+    }
+    
+    .fourNotFour > h6 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .fourNotFour > h1 {
+        font-size: 4rem;
+    }
+    
+    .fourNotFour > h6 {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+}
+

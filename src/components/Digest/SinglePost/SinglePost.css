@@ -1,0 +1,663 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.singlePost {
+    padding: 1.7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    background-color: #f7f7fb;
+}
+
+
+.postHeader {
+    position: relative;
+    height: 80vh;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 4rem;
+}
+.image{
+    height: 80vh;
+}
+.image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.image > .singlepostOverlay{
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     border-radius: 4px;
+     background-image: linear-gradient(rgba(255, 0, 0, 0), #000000);
+}
+.content {
+    position: absolute;
+    bottom: 1em;
+    padding: 1rem 4rem;
+    width: 70%;
+}
+.content > a>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 138px;
+    height: 40px;
+    color: white;
+    background: rgba(3, 218, 197, 0.8);
+    border-radius: 57px;
+}
+.content > h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    color: white !important;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.content > h6 {
+    display: inline;
+    margin-bottom: 1.5rem !important;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 0.9;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+.content > h6 > span > .MuiSvgIcon-root {
+    font-size: 2rem !important;
+    margin-right: 1rem;
+    position: relative;
+    top: 5px;
+}
+
+.postContainer {
+    display: flex;
+    margin: 3rem;
+    margin-top: 0;
+}
+
+.pbLeft {
+    margin: 0rem;
+    margin-top: 0;
+    flex: 0.75;
+    border-radius: 8px;
+}
+
+.textOne {
+    padding: 3rem 6rem 3rem 6rem;
+    padding-top: 0;
+    line-height: 148.69%;
+    color: #1E1F3B;
+}
+
+
+.pbRight {
+    margin-left: 2rem;
+    flex: 0.25;
+
+}
+
+.share {
+    height: 140px;
+    width: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(127, 57, 251, 0.08);
+    border-radius: 8px;
+    padding: 2em;
+    padding-bottom: 0.5em;
+}
+
+.share > h4 {
+    font-size: 26px;
+    font-weight: normal;
+    text-align: center;  
+    color: #2F315D;
+}
+
+.share > .follow_icons {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.share > .follow_icons> .icon {
+    margin: auto;
+    font-size: 2em !important;
+    color: #2F315D !important;
+    cursor: pointer;
+}
+.suggestions {
+    margin-top: 3rem;
+}
+.suggestions > h4 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 121.69%;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #040408;
+    margin-bottom: 1.5rem;
+}
+
+.sp_cardBody {
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.sp_cardBody > a> h3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 144.19%;
+    letter-spacing: -0.005em;   
+    color: #1E1F3B;
+}
+
+.sp_cardBody > button {
+    outline: none;
+}
+
+.postBody {
+    margin-top: 2rem;
+    box-shadow: 0px 12px 24px rgba(127, 57, 251, 0.08);
+}
+
+.postBodyNav {
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 24px rgba(127, 57, 251, 0.08);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.postBodyNav > h6 {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #2F315D;
+}
+
+
+.fontButtons {
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+}
+
+.fontButtons > button {
+    outline: none;
+    border-radius: 999px;
+}
+.postBodyContent{
+    background-color: #ffffff;
+    margin-top: -1.4em;
+}
+.textTwo {
+    padding: 3rem 6rem 0rem 6rem;
+    white-space: pre-wrap;
+    color: #1E1F3B;
+    line-height: 148.69%;
+}
+
+.postBodyFooter {
+    background-color: #ffffff;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postBodyFooter_icon {
+    cursor: pointer;
+    color: #2F315D;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: none;
+}
+
+.postBodyFooter_left, .postBodyFooter_right {
+    cursor: pointer;
+    color: #2F315D;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.postBodyFooter_left > button, .postBodyFooter_right > button {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 121.69%;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;    
+    color: #2F315D;
+}
+
+.post_categories {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: right;
+    margin-top: 3em;
+    width: 100%;
+}
+.post_catHeading{
+    display: flex;
+    padding: 1em 0;
+}
+.catTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #26284C;
+    margin: auto;
+}
+.post_catHeading > .line{
+    width:100%;
+    height: 1.2px;
+    margin: auto;
+    margin-left: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.catBtn{
+    margin-top: 1em !important;
+    width: 100%;
+    height: 67px ;
+    background: #7F81BA !important;
+    box-shadow: none !important;
+    color: white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    outline: none !important;
+}
+
+.btn_svg {
+    margin-right: 1.5rem;
+}
+.upNext{
+    margin-top: 5em;
+}
+.un_heading{
+    display: flex;
+}
+.un_heading>h1{
+    width:7em;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #26284C;
+}
+.un_heading>.line{
+    margin: auto !important;
+    height: 1.2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.upNextCard {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(127, 57, 251, 0.04);
+    border-radius: 4px;
+    margin: 2em 0;
+}
+
+.upNextCard:hover {
+    box-shadow: 0px 12px 37px rgba(65, 59, 74, 0.1);
+}
+
+.un_card_content {
+    padding: 1.5em 2em;
+}
+
+.un_header {
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    line-height: 28px;
+    margin-bottom: 1rem;
+    color: #1E1F3B;
+}
+
+.un_header:hover {
+    color: #1E1F3B;
+}
+
+.un_text {
+    margin-top: 1em;
+    font-size: 14px !important;
+    color: #1E1F3B;
+    line-height: 139.69%;
+}
+
+.un_footer {
+    margin-top: 1.5em;
+    display: flex;
+}
+.un_image>img{
+    width: 100%;
+    height: 13em !important;
+    object-fit: cover; 
+    border-radius: 4px;
+}
+.un_footer>a {
+    padding-top: 10px;
+    margin-right: 2em;
+    border-top: 1px solid #6A6DB4;
+    color: #6A6DB4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/*small laptop*/
+@media (min-width: 992px) and (max-width: 1200px) {
+    .singlePost {
+        padding: 1.5rem;
+    }
+    
+    .postHeader {
+        height: 75vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+    }
+    .image {
+        height: 75vh;
+    }
+    .postContainer {
+        display: flex;
+        margin: 1rem;
+        margin-top: 0;
+    }
+    .textOne {
+        padding: 2.3rem;
+        padding-top: 0;
+    }
+    .postBodyContent > img {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .textTwo {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 2rem;
+    }
+    .content {
+        bottom: 10px;
+        padding: 2rem;
+        width: 70%;
+    }
+    .content > p {
+        margin-bottom: 1.2rem;
+    }
+    .content > h1 {
+        font-weight: 500;
+        font-size: 45px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .content > h6 {
+        font-family: Roboto;
+        font-size: 20px;
+        color: #ffffff9f;
+    }
+
+}
+
+/*mobile*/
+
+@media screen and (max-width: 992px) {
+    .singlePost {
+        padding: 1rem;
+        padding-bottom: 5rem;
+    }
+    
+    .postHeader {
+        height: 75vh;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+    }
+    .image {
+        height: 75vh;
+    }
+    .image > img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .postContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        margin-top: 0;
+    }
+    .pbRight {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+    .textOne {
+        padding: 1.5rem 1.5rem;
+        padding-top: 0;
+    }
+    .postBodyContent > img {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .textTwo {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 0.7rem;
+        padding-top: 1rem;
+    }
+    .postBodyNav {
+        margin-bottom: 0.8rem;
+        padding: 0.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .postBodyNav :hover{
+        opacity: 1;
+    }
+    
+    .postBodyNav > h6 {
+        font-size: 14px;
+        letter-spacing: 0.045em;
+    }
+    
+    .fontButtons {
+        padding: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+    }
+
+    .content {
+        bottom: 0;
+        padding: 1.5rem;
+        width: 90%;
+    }
+    .content > p {
+        margin-bottom: 1.2rem;
+        width: 128px;
+        height: 35px;
+    }
+    .content > h1 {
+        font-weight: 400;
+        font-size: 35px;
+        margin-bottom: 1.2rem;
+    }
+    
+    .content > h6 {
+        font-family: Roboto;
+        font-size: 18px;
+        color: #ffffff9f;
+    }
+    .content > h6 > span > .MuiSvgIcon-root {
+        font-size: 1.5rem !important;
+        margin-right: 1rem;
+    }
+    .postBodyFooter_icon {
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
+    .postBodyHeader_icon, .postBodyFooter_left, .postBodyFooter_right {
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width:680px) {
+    .singlePost {
+        padding: 1.5rem 0.5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .postHeader {
+        height: 75vh;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .image {
+        height: 75vh;
+    }
+    .image > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+    }
+    
+    .postContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem;
+        margin-top: 0;
+    }
+    .pbRight {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        width: 75%;
+    }
+    .textOne {
+        padding: 1.5rem 1.5rem;
+        padding-top: 0;
+    }
+    .textTwo {
+        padding: 1.5rem 1.5rem;
+        padding-bottom: 0;
+    }
+    .postBodyNav {
+        margin-bottom: 0.8rem;
+        padding: 0.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .postBodyNav :hover{
+        opacity: 1;
+    }
+    
+    .postBodyNav > h6 {
+        font-size: 13px;
+        letter-spacing: 0.045em;
+    }
+    .postBodyFooter{
+        padding: 0;
+    }
+    .fontButtons {
+        padding: 0.5rem;
+        padding-bottom: 0.5rem;
+        display: flex;
+    }
+
+    .content {
+        bottom: 0;
+        padding: 1.2rem;
+        width: 90%;
+    }
+    .content > p {
+        margin-bottom: 0.6rem;
+        width: 128px;
+        height: 35px;
+    }
+    .content > h1 {
+        font-weight: 400;
+        font-size: 25px;
+        margin-bottom: 0.6rem;
+    }
+    
+    .content > h6 {
+        font-family: Roboto;
+        font-size: 14px;
+        color: #ffffff;
+    }
+    .content > h6 > span > .MuiSvgIcon-root {
+        font-size: 1.2rem !important;
+        margin-right: 1rem;
+    }
+    .postBodyFooter_icon {
+        padding-left: 0;
+        padding-right: 0;
+        display: block;
+    }
+    .postBodyHeader_icon, .postBodyFooter_left, .postBodyFooter_right {
+        display: none;
+    }
+    .upNext{
+        display: none;
+    }
+    .un_card_content {
+        padding: 1em 1.2em;
+    }
+    .un_header{
+        font-size: 16px !important;
+        line-height: 15px;
+    }
+    .un_text{
+        display: none;
+    }
+    .un_footer>a{
+        font-size: 10px !important;
+    }
+    .catBtn{
+        margin:0 0 -0.5em 0 !important;
+    }
+}
+

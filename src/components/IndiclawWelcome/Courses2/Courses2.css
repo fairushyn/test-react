@@ -1,0 +1,83 @@
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10% 0 10%;
+  margin-top: 30px;
+}
+
+.courses-container h2 {
+  font-size: 45px;
+  line-height: 119.19%;
+  color: #26284c;
+}
+
+.indicLaw-course-details {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: center;
+  width: 100%;
+}
+
+.indicLaw-course-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.coaches-image-container {
+  align-self: end;
+  justify-self: center;
+}
+
+.coaches-image-container img {
+  max-width: 450px;
+}
+
+.course-content2 {
+  justify-self: end;
+}
+
+.indicLaw-course-content p {
+  color: #1e1f3b;
+  line-height: 155.69%;
+  font-size: 18px;
+}
+
+.indicLaw-course-content h3 {
+  line-height: 130.69%;
+  font-size: 25px;
+  color: #383a6e;
+}
+
+@media screen and (max-width: 992px) {
+  .courses-container {
+    padding: 0 7% 0 7%;
+  }
+
+  .coaches-image-container {
+    display: none;
+  }
+
+  .indicLaw-course-details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .indicLaw-course-content h3 {
+    font-size: 20px;
+  }
+
+  .indicLaw-course-content p {
+    font-size: 15px;
+  }
+
+  .indicLaw-course-details {
+    grid-column-gap: 20px;
+  }
+}

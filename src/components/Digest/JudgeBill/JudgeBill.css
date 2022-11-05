@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+.JudgeBill{
+    background-color: #f7f7fb;
+    display: flex;
+    padding: 4em 3em;
+    font-family: Roboto;
+}
+.leftside{
+    flex:0.7;
+}
+.rightside{
+    flex:0.3;
+}
+
+.jb_category {
+    font-family: Roboto;
+}
+.jb_header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
+.jb_header>h1 {
+    width:50%;
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #26284C;
+}
+.jb_header>.line {
+    margin-left: 1em;
+    height: 1.2px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: -6px !important;
+}
+.card-laptop-img>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.card-mobile-img {
+    display: none;
+}
+.jb_Card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(127, 57, 251, 0.04);
+    border-radius: 4px;
+    margin: 2em 0;
+}
+.jb_Card:hover {
+    box-shadow: 0px 12px 37px rgba(65, 59, 74, 0.1);
+}
+.jb_card_content {
+    padding:2em 2.5em;
+}
+
+.jb_cardHeader {
+    font-weight: 500 !important;
+    font-size: 29px !important;
+    line-height: 34px;
+    margin-bottom: 1rem;
+    color: #1E1F3B;
+}
+
+.jb_cardHeader:hover {
+    color: #1E1F3B;
+}
+
+.jb_text {
+    margin-top: 1em;
+    font-size: 16px !important;
+    color: #1E1F3B;
+    line-height: 139.69%;
+}
+
+.jb_footer {
+    margin-top: 1.8em;
+    display: flex;
+}
+
+.jb_footer>a{
+    padding-top: 10px;
+    margin-right: 2em;
+    border-top: 1px solid #6A6DB4;
+    color: #6A6DB4;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 0.08em;
+}
+
+.view_button {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.view_button>a>button {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #2F315D;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #2F315D;
+    border-radius: 54px;
+    padding: 8px 38px;
+
+}
+.Sidebar {
+    margin-top: 0.8rem !important;
+    font-family: Roboto;
+}
+
+.subscribe {
+    float: right;
+    width: 58%;
+    padding: 2em;
+    background: #2F315D;
+    box-shadow: 0px 4px 8px rgba(127, 57, 251, 0.05);
+    border-radius: 8px;
+}
+
+.subscribe>h4 {
+    width: 218px;
+    height: 62px;
+    font-size: 24px;
+    line-height: 130.69%;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.subscribe>input {
+    margin-top: 1.75rem;
+    width: 100%;
+    height: 50px;
+    background: rgba(213, 213, 234, 0.5);
+    color: #FFFFFF;
+    border-radius: 46px;
+    text-indent: 25px;
+    outline: none;
+    border: none;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    text-align: center;
+    color: white;
+}
+
+::-ms-input-placeholder {
+    text-align: center;
+    color: white;
+}
+
+.follow {
+    float: right;
+    margin-top: 2rem;
+    padding: 2em;
+    width: 58%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(127, 57, 251, 0.04);
+    border-radius: 8px;
+}
+
+.follow>h4 {
+    font-size: 26px;
+    text-align: center;
+    color: #2F315D;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.follow>.follow_icons {
+    justify-content: space-evenly;
+    display: flex;
+    margin-top: 1.7em;
+}
+
+.follow>.follow_icons>a>.icon {
+    font-size: 2em;
+    color: #2F315D;
+}
+
+.categories {
+    float: right;
+    margin-top: 3em;
+    width: 75%;
+}
+
+.catHeading {
+    display: flex;
+    padding: 1em 0;
+}
+
+.catTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #26284C;
+    margin: auto;
+}
+
+.catHeading > .line {
+    width: 100%;
+    height: 1.2px;
+    margin: auto;
+    margin-left: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.catBtn {
+    margin-top: 1em !important;
+    width: 100%;
+    height: 67px;
+    background: #7F81BA !important;
+    box-shadow: none !important;
+    color: white !important;
+    font-family: Roboto !important;
+    font-weight: normal !important;
+    font-size: 15px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    outline: none !important;
+}
+
+.btn_svg {
+    margin-right: 1.5rem;
+}
+
+@media (min-width: 959px) and (max-width: 1070px) {
+
+    .jb_header>h1 {
+        margin-left: 0 !important;
+        font-size: 26px !important;
+    }
+
+    .jb_header>.line {
+        margin-left: 1em !important;
+    }
+
+    .jr_cards {
+        margin-top: 2em;
+    }
+
+    .jb_card_content {
+        padding: 0.6em 2em !important;
+    }
+
+    .jb_cardHeader {
+        font-size: 25px !important;
+    }
+
+    .jb_text {
+        font-size: 16px !important;
+    }
+
+    .jb_footer>a {
+        font-size: 16px !important;
+    }
+    .subscribe {
+        padding: 1.2em;
+    }
+    .subscribe>h4 {
+        font-size: 20px;
+    }
+    .subscribe>input {
+        margin-top: 0.7em;
+    }
+    .follow>h4 {
+        font-size: 20px;
+    }
+    .follow>.follow_icons>a>.icon {
+        font-size: 1.6em;
+    }
+    .catTitle {
+        font-size: 18px;
+    }
+    .catBtn {
+        height: 56px;
+    }
+}
+
+/*mobile*/
+
+@media screen and (max-width: 959px) {
+    .jb_header>h1 {
+        margin-left: 0 !important;
+        font-size: 26px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .jb_header>.line {
+        margin-left: 1em !important;
+    }
+
+    .jr_cards {
+        margin-top: 1.5em;
+    }
+
+    .card-mobile-img {
+        display: block;
+    }
+    .card-mobile-img>img{
+        height: 17em;
+        width: 100%;
+        border-radius: 4px;
+    }
+    .card-laptop-img {
+        display: none;
+    }
+
+    .view_button {
+        margin-top: 2.4em !important;
+    }
+
+    .view_button>a>button {
+        font-size: 15px !important;
+        font-weight: 500;
+        padding: 8px 28px;
+    }
+
+    .jb_card_content {
+        padding: 0.5em 1.3em !important;
+    }
+
+    .jb_cardHeader {
+        font-size: 21px !important;
+        line-height: 29px !important;
+    }
+    .jb_text {
+        font-size: 13px !important;
+    }
+    .jb_footer>a{
+        font-size: 11px !important;
+    }
+    .subscribe {
+        padding: 1em;
+    }
+
+    .subscribe>h4 {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .subscribe>input {
+        margin-top: 0px;
+        height: 3em;
+        font-size: 10px !important;
+    }
+
+    .follow {
+        padding: 1em;
+    }
+
+    .follow>h4 {
+        font-size: 17px;
+    }
+
+    .follow>.follow_icons {
+        margin-top: 18px;
+    }
+
+    .follow>.follow_icons>a>.icon {
+        font-size: 1.3em;
+    }
+
+    .subscribe>input {
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .catTitle {
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    .JudgeBill{
+        padding: 2em 0;
+    }
+    .leftside{
+        margin: auto ;
+    }
+    .rightside {
+        display: none;
+    }
+    .jb_category {
+        margin-top: 1em;
+    }
+    .jb_header{
+        margin-bottom: 2em;
+    }
+    .jb_header>h1 {
+        width:120%;
+        margin-left: 0 !important;
+        font-size: 22px !important;
+    }
+    .jb_header>.line {
+        margin-left: 0 !important;
+        margin-top: -5px !important;
+    }
+    .view_button {
+        margin-top: 2em;
+    }
+    .jb_footer {
+        margin-bottom: 0.7rem;
+    }
+}

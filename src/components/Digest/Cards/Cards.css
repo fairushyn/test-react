@@ -1,0 +1,10 @@
+.cardmedia>img{
+    height:234px;
+    width:100%;
+}
+
+@media screen and (max-width:960px) {
+    #digest-cards{
+        display: none !important;
+    }
+}
